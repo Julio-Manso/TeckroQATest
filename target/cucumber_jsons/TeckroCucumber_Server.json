@@ -1,0 +1,274 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-14T17:37:17.956Z",
+        "line": 3,
+        "name": "User checks availability of room for a specific date",
+        "description": "",
+        "id": "booking-hotel-server-testing;user-checks-availability-of-room-for-a-specific-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116122615,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user that wants to check availability of room and inputs date \"2019-11-24\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-11-24\"",
+                  "offset": 66
+                }
+              ],
+              "location": "Steps.theUserThatWantsToCheckAvailabilityOfRoomAndInputsDate(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c10\u003e but was:\u003c-2\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat org.junit.Assert.assertEquals(Assert.java:631)\n\tat ie.teckro.steps.Steps.theUserAssertsThatTheNumberOfRoomsAvailableIs(Steps.java:43)\n\tat ✽.the user asserts that the number of rooms available is 10(classpath:cucumber-features/TeckroCucumber_Server.feature:5)\n",
+              "duration": 13111343,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "the user asserts that the number of rooms available is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 55
+                }
+              ],
+              "location": "Steps.theUserAssertsThatTheNumberOfRoomsAvailableIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36155,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user asserts that the price for the room is 120",
+            "match": {
+              "arguments": [
+                {
+                  "val": "120",
+                  "offset": 48
+                }
+              ],
+              "location": "Steps.theUserAssertsThatThePriceForTheRoomIs(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:18.133Z",
+        "line": 13,
+        "name": "User books a room",
+        "description": "",
+        "id": "booking-hotel-server-testing;user-books-a-room;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38166236,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user that books a room on the \"2019-04-28\" for \"2\" days",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-04-28\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 51
+                }
+              ],
+              "location": "Steps.theUserThatBooksARoomOnTheForDays(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 255531,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user asserts that the checkout date is on \"2019-04-30\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-04-30\"",
+                  "offset": 46
+                }
+              ],
+              "location": "Steps.theUserAssertsThatTheCheckoutDateIsOn(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:18.197Z",
+        "line": 14,
+        "name": "User books a room",
+        "description": "",
+        "id": "booking-hotel-server-testing;user-books-a-room;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14951671,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user that books a room on the \"2019-07-09\" for \"1\" days",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-07-09\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 51
+                }
+              ],
+              "location": "Steps.theUserThatBooksARoomOnTheForDays(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 494097,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user asserts that the checkout date is on \"2019-07-10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-07-10\"",
+                  "offset": 46
+                }
+              ],
+              "location": "Steps.theUserAssertsThatTheCheckoutDateIsOn(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:18.232Z",
+        "line": 15,
+        "name": "User books a room",
+        "description": "",
+        "id": "booking-hotel-server-testing;user-books-a-room;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14557170,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user that books a room on the \"2019-09-12\" for \"4\" days",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-09-12\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 51
+                }
+              ],
+              "location": "Steps.theUserThatBooksARoomOnTheForDays(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 251434,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user asserts that the checkout date is on \"2019-09-16\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-09-16\"",
+                  "offset": 46
+                }
+              ],
+              "location": "Steps.theUserAssertsThatTheCheckoutDateIsOn(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:18.269Z",
+        "line": 17,
+        "name": "Negative Test: Checking that user gets the same price when they check availability and when they are booking",
+        "description": "",
+        "id": "booking-hotel-server-testing;negative-test:-checking-that-user-gets-the-same-price-when-they-check-availability-and-when-they-are-booking",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20489344,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user that checks and books room on \"2019-12-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-12-01\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Steps.theUserThatChecksAndBooksRoomOn(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c120\u003e but was:\u003c110\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat org.junit.Assert.assertEquals(Assert.java:631)\n\tat ie.teckro.steps.Steps.theUserAssertsThatTheyDonTReceiveTheSamePriceAsWhenTheyCheckedAvailability(Steps.java:103)\n\tat ✽.the user asserts that they don\u0027t receive the same price as when they checked availability(classpath:cucumber-features/TeckroCucumber_Server.feature:19)\n",
+              "duration": 351873,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "the user asserts that they don\u0027t receive the same price as when they checked availability",
+            "match": {
+              "location": "Steps.theUserAssertsThatTheyDonTReceiveTheSamePriceAsWhenTheyCheckedAvailability()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Booking Hotel Server testing",
+    "description": "",
+    "id": "booking-hotel-server-testing",
+    "keyword": "Feature",
+    "uri": "classpath:cucumber-features/TeckroCucumber_Server.feature",
+    "tags": []
+  }
+]

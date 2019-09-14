@@ -1,0 +1,331 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-14T17:37:28.982Z",
+        "line": 3,
+        "name": "User checks availability of room for a specific date",
+        "description": "",
+        "id": "booking-hotel-web-testing;user-checks-availability-of-room-for-a-specific-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4585544146,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user that checks availability for a room for date \"2019-02-22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-02-22\"",
+                  "offset": 54
+                }
+              ],
+              "location": "Steps.theUserThatBooksAHotelForDate(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 101369286,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user clicks check",
+            "match": {
+              "location": "Steps.theUserClicksCheck()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 129216057,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user receives response",
+            "match": {
+              "location": "Steps.theUserReceivesResponse()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:33.828Z",
+        "line": 14,
+        "name": "Negative Test: Calendar test - User inputs wrong dates",
+        "description": "",
+        "id": "booking-hotel-web-testing;negative-test:-calendar-test---user-inputs-wrong-dates;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2972416851,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user that checks availability for a room for date \"0000-01-22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0000-01-22\"",
+                  "offset": 54
+                }
+              ],
+              "location": "Steps.theUserThatBooksAHotelForDate(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 97528572,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks check",
+            "match": {
+              "location": "Steps.theUserClicksCheck()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69089220,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user asserts that they are blocked by this",
+            "match": {
+              "location": "Steps.theUserAssertsThatTheyAreBlockedByThis()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:36.985Z",
+        "line": 15,
+        "name": "Negative Test: Calendar test - User inputs wrong dates",
+        "description": "",
+        "id": "booking-hotel-web-testing;negative-test:-calendar-test---user-inputs-wrong-dates;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3462540731,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user that checks availability for a room for date \"30000-01-22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"30000-01-22\"",
+                  "offset": 54
+                }
+              ],
+              "location": "Steps.theUserThatBooksAHotelForDate(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 96235753,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks check",
+            "match": {
+              "location": "Steps.theUserClicksCheck()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108858413,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user asserts that they are blocked by this",
+            "match": {
+              "location": "Steps.theUserAssertsThatTheyAreBlockedByThis()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:40.666Z",
+        "line": 16,
+        "name": "Negative Test: Calendar test - User inputs wrong dates",
+        "description": "",
+        "id": "booking-hotel-web-testing;negative-test:-calendar-test---user-inputs-wrong-dates;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3150714999,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user that checks availability for a room for date \"2019-1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-1\"",
+                  "offset": 54
+                }
+              ],
+              "location": "Steps.theUserThatBooksAHotelForDate(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113786075,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks check",
+            "match": {
+              "location": "Steps.theUserClicksCheck()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105740988,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user asserts that they are blocked by this",
+            "match": {
+              "location": "Steps.theUserAssertsThatTheyAreBlockedByThis()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:44.049Z",
+        "line": 17,
+        "name": "Negative Test: Calendar test - User inputs wrong dates",
+        "description": "",
+        "id": "booking-hotel-web-testing;negative-test:-calendar-test---user-inputs-wrong-dates;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3599212462,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user that checks availability for a room for date \"2019-13-22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-13-22\"",
+                  "offset": 54
+                }
+              ],
+              "location": "Steps.theUserThatBooksAHotelForDate(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 105923639,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks check",
+            "match": {
+              "location": "Steps.theUserClicksCheck()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81813206,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user asserts that they are blocked by this",
+            "match": {
+              "location": "Steps.theUserAssertsThatTheyAreBlockedByThis()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T17:37:47.855Z",
+        "line": 18,
+        "name": "Negative Test: Calendar test - User inputs wrong dates",
+        "description": "",
+        "id": "booking-hotel-web-testing;negative-test:-calendar-test---user-inputs-wrong-dates;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3257708395,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user that checks availability for a room for date \"2019-13-34\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-13-34\"",
+                  "offset": 54
+                }
+              ],
+              "location": "Steps.theUserThatBooksAHotelForDate(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90747540,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks check",
+            "match": {
+              "location": "Steps.theUserClicksCheck()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100791661,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user asserts that they are blocked by this",
+            "match": {
+              "location": "Steps.theUserAssertsThatTheyAreBlockedByThis()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Booking Hotel Web testing",
+    "description": "",
+    "id": "booking-hotel-web-testing",
+    "keyword": "Feature",
+    "uri": "classpath:cucumber-features/TeckroCucumber_Web.feature",
+    "tags": []
+  }
+]

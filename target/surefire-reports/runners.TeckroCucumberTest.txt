@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: runners.TeckroCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in runners.TeckroCucumberTest
+initializationError(runners.TeckroCucumberTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Feature not found: classpath:cucumber-feature/TeckroCucumber.feature
+

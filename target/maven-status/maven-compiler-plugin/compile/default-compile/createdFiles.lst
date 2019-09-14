@@ -1,0 +1,7 @@
+ie/teckro/impl/HotelBookingClientImpl.class
+ie/teckro/client/HotelBookingClient.class
+ie/teckro/client/HotelBookingCheckAvailability.class
+ie/teckro/client/ScenarioData.class
+ie/teckro/client/BookRoom.class
+ie/teckro/TestConfig.class
+ie/teckro/steps/Steps.class
